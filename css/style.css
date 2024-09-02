@@ -32,7 +32,10 @@
     transition: 1s ;
   }
 /*    2- GENERAL STYLES   /////////////////////////////////////////////////////////////////////  */
-  *{
+ body{
+  font-family: sans-serif;
+ }
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -100,6 +103,7 @@
 .home-h2{
     font-size: 57px;
     text-transform: uppercase;
+    font-weight: 500;
 }
 .home-p1{
     padding: 15px  0px;
@@ -625,6 +629,7 @@ visibility: hidden;
 }
 .news-h4{
   font-size: 19px;
+  
 }
 .r1jr:after{
 top: 0;
