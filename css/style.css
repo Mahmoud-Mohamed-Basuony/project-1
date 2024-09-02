@@ -1,0 +1,667 @@
+ /*   1- COMMON STYLES
+      2- GENERAL STYLES
+      3- SECTIONS
+        3.1  HEADER
+        3.2  HOME SECTION
+        3.3  WELCOME TO WIBSITE SECTION
+        3.4  MEET OUR TEAM SECTION 
+        3.5  WHAT WE OFFER SECTION
+        3.6  WHY CHOOSE US SECTION
+        3.7  IMAGE1 SECTION
+        3.8  PRICING TABLE SECTION
+        3.9  IMAGE2 SECTION
+        3.10  OUR TEAM SECTION
+        3.11  RECENT NEWS SECTION
+        3.12  FOOTER SECTI0N
+ */
+/*  1- COMMON STYLES  /////////////////////////////////////////////////////////// */
+  .overlay:after{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    top : 0;
+    left:  0;
+    background-color: rgba(0, 0, 0, 0.8);
+    opacity: 1;
+  }
+  .overlay:hover::after {
+    width: 100%;
+    height: 100%;
+    opacity: 0.3 ;
+    transition: 1s ;
+  }
+/*    2- GENERAL STYLES   /////////////////////////////////////////////////////////////////////  */
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+ a{
+    text-decoration: none;
+ }
+ .line{
+    width: 60px;
+    height: 4px;
+    background-color: #f14856;
+    margin: 10px  auto;
+ }
+ /*  3.1  HEADER      ////////////////////////////////////////////  */
+ .header{
+   position: fixed;
+   top: 0;
+    width: 100%;
+    height: 63px;
+    background-color: white;
+    border: 0.1px  solid  rgb(232, 223, 223);
+    overflow: auto;
+    opacity: 0.7;
+    z-index: 10;
+}
+.header ul{
+    float: right;
+    margin-right: 50px;
+}
+.header ul li{
+    display: inline-block;
+    margin: 20px   50px;
+}
+.header img{
+    float: left;
+    height: 60px;
+    width: 100px;
+    margin-left: 50px;
+}
+.header ul li a{
+    color: black;
+}
+/*   3.2  HOME SECTION   /////////////////////////////////////////////////////   */
+ .home{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/WhatsApp\ Image\ 2024-08-17\ at\ 18.47.04_2e4d8650.jpg);
+    background-size:cover ;
+}
+.home-overlay{
+    width: 100%;
+    height: 100%;
+    background-color: hsla(231, 69%, 65%, 0.5);
+    position: relative; 
+}
+.home-iformation{
+    position: absolute;
+    width: 60%;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%); 
+}
+.home-h2{
+    font-size: 57px;
+    text-transform: uppercase;
+}
+.home-p1{
+    padding: 15px  0px;
+    font-size: 23px;
+    letter-spacing: 2px;
+}
+.home-butt1 , .home-butt2{
+   padding: 15px   22px;
+   font-size:18 ;
+   border: 0;
+   border-radius: 7px;  
+}
+.home-butt1:hover , .home-butt2:hover{
+    opacity: 0.9;
+    cursor: pointer;
+}
+.home-butt2{
+   background-color: #F25260;
+   color: white;
+   margin-left: 13px;
+}
+/*   3.3  WELCOME TO WIBSITE SECTION  /////////////////////////////////////////////////////////// */
+   .welcome-h2 , .team-h2{
+    text-align: center;
+    padding-top:130px ;
+    font-size: 30px;
+   }
+   .welcome-conteaner{
+    width: 80%;
+    margin: auto;
+   }
+   .welcome-pearant{
+   margin-top:90px ;
+    overflow: auto;
+   }
+   .welcome-iteam{
+    width: 30%;
+    height: 230px;
+    float: left;
+    background-color:#5666BF;
+    margin: auto;
+    position: relative;
+   }
+   .ee{
+    margin: 0px  5%;
+   }
+   .overlay-from-the-angle{
+    position: absolute;
+    z-index: 1;
+    text-align: center;
+    top:50% ;
+    transform: translate(0% , -50%);
+   }
+  .welcome-h3 , .welcome-p1 {
+    color: white;
+    padding: 10px  0px;
+  }
+  .welcome-h3{
+    font-size: 25px;
+  }
+  .welcome-iteam:hover  .welcome-h3{
+    color: black;
+  } 
+  .welcome-p1 {
+    font-size:16px ;
+  }
+  .welcome-a{
+    font-size: 20px;
+    color: black;
+  }
+  .overlay-from-the-angle i{
+  font-size: 40px;
+ color: white;
+ padding-bottom:20px ;
+}
+/*    3.4  MEET OUR TEAM SECTION   /////////////////////////////////////////////////  */
+.team-conteaner{
+  width: 100%;
+  background-color: #FAFAFA;
+  margin-top: 220PX;
+  padding-bottom:160px ;
+}
+.team-pearent{
+width: 80%;
+margin: auto;
+overflow: auto;
+}
+.team-iteam{
+  width: 30%;
+  height: 330px;
+  position: relative;
+  float: left;
+  margin-top: 70px;
+}
+.team-overlay{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba( 0, 0, 0, 0.7);
+  visibility: hidden;
+  text-align: center;
+}
+.team-iteam:hover .team-overlay{
+  visibility: visible;
+}
+.team-img{
+width: 90%;
+height: 90%;
+margin: 5%  5%;
+}
+.team-img img{
+  width: 100%;
+  height: 100%;
+}
+.team-h4{
+  font-size: 20px;
+  color:#4f63d4 ;
+  padding-top:115px ;
+}
+.team-p1{
+  font-size: 15px;
+  color:white;
+ padding: 10px  0px;
+}
+.team-overlay i{
+font-size: 25px;
+}
+.team-butt-ico{
+  width: 40px;
+  height: 40px;
+  background-color:#5666BF;
+}
+/*    3.5  WHAT WE OFFER SECTION    /////////////////////////////////////////////////////////    */
+.offer-conteaner{
+  width: 80%;
+  margin: auto;
+}
+.offer-pearent{
+  width: 100%;
+  height: 810px;
+  overflow: auto;
+}
+.offer-iteam{
+  width: 30%;
+  height: 180px;
+  border: 0.1px  solid  rgb(78, 75, 75);
+  float: left;
+  position: relative;
+  margin-top: 30px;
+}
+.offer-h2{
+  text-align: center;
+  padding-top:130px ;
+  font-size: 30px;
+}
+.ite{
+  margin-top: 80px;
+}
+.offer-img{
+  padding: 10px;
+  width: 80px;
+  height: 80px;
+}
+.offer-h4{
+  margin-top:-30px ;
+  text-align: center;
+  font-size: 20px;
+}
+.offer-p1{
+  font-size: 15px;
+  padding: 20px  0 ; 
+  text-align: center;
+}
+.offer-iteam:hover .offer-h4{
+color:#4f63d4 ;
+}
+/*   3.6  WHY CHOOSE US SECTION    ///////////////////////////////////////////////////  */
+.choose-conteaner{
+  width: 100%;
+  background-color: #FAFAFA ;
+  height: 720px;
+}
+.choose-pearent{
+width: 80%;
+overflow: auto;
+margin:auto ;
+}
+.choose-information{
+  width: 45%;
+  margin-top:90px;
+  float: left;
+}
+.choose-img{
+  width: 45%;
+ text-align: center;
+ height: 530px;
+ margin-top:100px;
+  float: left;
+  margin-left: 10%;
+}
+.choose-image{
+  background-image: url(../images/54639.jpeg.webp);
+  width: 100%;
+  height: 480px;
+  background-size: cover;
+}
+.choose-image:hover .ico1{
+  visibility: visible;
+}
+.choose-image .ico1{
+  display: block;
+  margin-left: 94%;
+  font-size: 25px;
+  line-height: 40px;
+  color:#5666BF  ;
+  visibility: hidden;
+  cursor: pointer;
+}
+.choose-span1{
+display: block;
+font-size: 18px;
+padding: 10px 0;
+}
+.choose-h2{
+  font-size: 30px;
+}
+.ll{
+  margin-left: 0px;
+}
+.choose-p1{
+  font-size: 21px;
+  padding: 20px 0;
+}
+.icon{
+  color:#4f63d4 ;
+}
+.choose-butt ,.choose-butt1 ,.choose-butt2{
+ width:12px ;
+ height: 12px;
+ border-radius: 50%;
+ border: 0;
+  background-color: #5666BF;
+  margin: 10px 5px;
+
+}
+.choose-butt1 ,.choose-butt2{
+  background-color: rgb(201, 193, 193);
+ }
+ .choose-butt1:hover ,.choose-butt2:hover{
+  background-color: #5666BF ;
+ }
+/*   3.7  IMAGE1 SECTION   ///////////////////////////////////////////////////////////////*/
+.image-conteaner{
+  width: 100%;
+  background-color:  #FAFAFA  ;
+  height: 500px;
+}
+.image-pearent{
+  width: 100%;
+  height: 350px;
+  background-image: url(../images/WhatsApp\ Image\ 2024-08-18\ at\ 19.45.07_2617cfdc.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+position: relative;
+}
+.image-overlay{
+background-color: rgba( 0, 0, 0, 0.5);
+width: 100%;
+height: 100%;
+position: absolute;
+}
+.image-iteam{
+  float: left;
+  text-align: center;
+margin-left: 135px;
+}
+.div1{
+  width: 70%;
+  overflow: auto;
+  margin: auto;
+  margin-top: 120px;
+}
+.image-icon{
+  font-size: 40px;
+  color:#7686df;
+}
+.image-h5{
+  font-size: 20px;
+  color: white;
+padding: 10px 0;
+}
+.image-p1{
+  font-size: 17px;
+  color: white;
+}
+/*   3.8  PRICING TABLE SECTION    /////////////////////////////////////////////////////////////////  */
+.pricing-conteaner{
+  width: 100%;
+  background-color:  #FAFAFA;
+}
+.pricing-pearent{
+  width: 80%;
+  height: 810px;
+  margin: auto;
+  overflow: auto;
+}
+.pricing-h2{
+  text-align: center;
+  font-size: 30px;
+}
+.pricing-iteam{
+  width: 30%;
+  height: 350px;
+ border: 0.1px solid rgb(78, 75, 75);
+  float: left;
+  margin:70px 0px ;
+  position: relative;
+  text-align: center;
+}
+.pp{
+  margin: 70px 5%;
+}
+.nn:after{
+  width: 100%;
+  top: 0;
+}
+.pricing-circle{
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  margin: auto;
+  border: 1px solid #F25260;
+  border-radius: 50%;
+  margin-bottom: 25px;
+}
+.pricing-p2 {
+font-size: 23px;
+}
+.pricing-p1 , .pricing-p4{
+  padding: 25px  0px;
+}
+.pricing-h6{
+  font-size: 50px;
+  padding-top: 3px;
+}
+.pricing-butt{
+  width: 110px;
+  height: 25px;
+  font-size: 18px;
+  border: 1px solid #F25260 ;
+}
+.pricing-iteam:hover .pricing-p2 ,.pricing-iteam:hover .pricing-p1 ,.pricing-iteam:hover .pricing-h6{
+  color: #5666BF;
+}
+/*   3.9  IMAGE2 SECTION    ////////////////////////////////////////////////////////   */
+.image2-conteaner{
+  width: 100%;
+}
+.image2-pearent{
+  width: 100%;
+  height: 350px;
+  background-image: url(../images/healthcare-medicine-people-technology-concept-happy-smiling-doctor-with-stethoscope-virtual-charts-blue-background_380164-180844.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.image2-overlay{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0 , 0, 0, 0.7);
+  overflow: auto;
+}
+.image2-iteam{
+  width: 30%;
+  float: left;
+  margin-top: 95px;
+  margin-left: 13.33%;
+}
+.y13{
+  overflow: auto;
+}
+.image2-img{
+  background-image: url(../images/beautiful-female-doctor-with-arms-crossed-standing-isolated-over-white-background_470178-16923.jpg);
+  background-size: cover;
+  width: 80px;
+  height: 80px;
+  border-radius:50% ;
+  float: left;
+}
+.po{
+  background-image: url(../images/WhatsApp\ Image\ 2024-08-18\ at\ 20.09.52_b1edad1d.jpg);
+}
+.image2-name{
+  float: left;
+}
+.image2-p2{
+font-size: 17px;
+padding-top: 15px;
+color: white;
+}
+.image2-p1{
+  font-size: 20px;
+  padding-left: 15px;
+color: #5666BF ;
+}
+.image2-h6{
+  font-size: 25px;
+  padding: 0px  15px;
+  padding-top: 18px;
+  color: white;
+}
+/*   3.10  OUR TEAM SECTION   ////////////////////////////////////////////////////////////////   */
+.our-team-conteaner{
+  width: 80%;
+  margin: auto;
+}
+.our-team-pearent{
+overflow: auto;
+}
+.our-team-iteam{
+  width: 30%;
+  background-color:   #FAFAFA;
+  padding: 18px 14px ;
+float: left;
+position: relative;
+margin: 50px  0;
+}
+.kk{
+  margin: 50px 5%;
+}
+.our-team-h2{
+  text-align: center;
+  font-size: 30px;
+  margin-top: 130px;
+}
+.our-team-img{
+  width: 85%;
+  margin: auto;
+  position: relative;
+}
+.our-team-img  img{
+  width: 100%;
+}
+.our-team-overlay{
+  background-color: rgba( 0, 0, 0, 0.7);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+visibility: hidden;
+}
+.our-team-iteam:hover .our-team-overlay{
+  visibility: visible;
+}
+.our-team-overlay a{
+  display: block;
+  width: 35px;
+  height: 40px;
+  background-color:#4f63d4;
+  color: #fff;
+  margin-left: auto ;
+  text-align: center;
+}
+.our-team-overlay a i{
+ line-height: 40px;
+ font-size: 20px;
+ color:rgb(250, 250, 250) ;
+}
+.our-team-information{
+  text-align: center;
+}
+.our-team-h4{
+  padding: 12px  0px;
+}
+.our-team-iteam:hover .our-team-h4{
+  color:#4f63d4 ;
+}
+.our-team-iteam:hover .our-team-p1{
+  color:rgb(132, 127, 127) ;
+}
+.nk:after{
+  width: 100%;
+  top: 0;}
+/*    3.11  RECENT NEWS SECTION    //////////////////////////////////////////////////////////////////////////// */
+.news-conteaner{
+  width: 80%;
+  margin: auto;
+}
+.news-h2{
+  text-align: center;
+  font-size: 30px;
+  margin-top: 80px;
+}
+.news-pearent{
+  background-color: #FAFAFA ;
+  overflow: auto;
+  margin-top:70px ;
+}
+.news-iteam{
+  width: 30%;
+  float: left;
+  position: relative;
+  background-color: white;
+  padding-left: 25px;
+  height: 500px;
+}
+.news{
+  margin: 0px  5%;
+}
+.news-h4 , .news-p1 , .news-a , .news-ico{
+  padding: 19px  0px;
+}
+.news-ico{
+  padding-left: 10px;
+  color:hsl(231, 61%, 57%) ;
+}
+.news-a{
+  font-size: 20px;
+  color:hsl(231, 61%, 57%)  ;
+}
+.news-h4{
+  font-size: 19px;
+}
+.r1jr:after{
+top: 0;
+width: 100%;
+background-color: hsla(231, 61%, 56%, 0.7);
+}
+/*   3.12  FOOTER SECTI0N    ////////////////////////////////////////////////////////////////////////////////  */
+.last-conteaner{
+  width: 100%;
+  height: 320px;
+  background-color:hsl(233, 15%, 22%) ;
+  position: relative;
+}
+.last-pearent{
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate( -50% ,-50%);
+}
+.last-but{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 0;
+  background-color: white;
+  margin: 15px  0px;
+}
+.last-ico{
+  font-size: 30px;
+  color:#f14856;
+}
+.last-but:hover{
+  background-color: #3d4056;
+  cursor: pointer;
+}
+.last-p{
+  color: white;
+}
+/*  ////////////////////////////////////////////////////////////////////////////////////  */
